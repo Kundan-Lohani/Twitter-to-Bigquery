@@ -12,8 +12,8 @@ publisher = pubsub_v1.PublisherClient()
 topic_path = publisher.topic_path("GCP_Project", "PubSub Topic")
 
 # Authenticate
-auth = tweepy.OAuthHandler("2Vjmr469BhhSasgHY4o2TpJCu", "iGwdKo1CQ50ss2wHh3uO02hlNLiTKYMWRBKNR4FbBPUMMqtJfH")
-auth.set_access_token("1036453656973828097-zdP3A1YAYWyWaBQTTnI7tbu5uCPtNR", "9y5vLvfI9EQx6LQPpoML8pmcF903mF5v1X7SVIdR7l30f")
+auth = tweepy.OAuthHandler("CONSUMER_KEY", "CONSUMER_SECRET")
+auth.set_access_token("ACCESS_TOKEN", "ACCESS_TOKEN_SECRET")
 
 # Configure to wait on rate limit if necessary
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=False)
